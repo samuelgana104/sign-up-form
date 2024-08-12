@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(111, 111, 160);
+}
+.container {
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid wheat;
+  box-shadow: 5px 1px 6px #000, -1px -1px 4px #fff;
+  display: flex;
+  flex-direction: column;
+}
+.container > h1 {
+  text-align: center;
+  color: rgb(87, 165, 165);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.card {
+  margin: 20px 23px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card > label {
+  text-transform: capitalize;
+  color: whitesmoke;
+  font-size: 1.4em;
+  width: 20%;
+}
+.card > input {
+  background: transparent;
+  border: none;
+  padding: 10px 5px;
+  width: 75%;
+  font-size: 1.4em;
+  border-bottom: 1px solid white;
+  margin-left: 20px;
+  outline: none;
+  color: wheat;
+
+}
+.card > input:focus {
+  outline: none;
+  background-color: transparent;
+}
+.card > input::placeholder {
+  color: wheat;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+.card >.error {
+ 
+  color: red;
+  margin-left: 24%;
+  width: 100%;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: wheat;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin: 30px 0;
+}
+.submit:hover {
+  background-color: transparent;
+  border: #fff 1px solid;
+  color: white;
+}
+
+.card.error> input {
+  border-bottom:1px solid red;
+}
+
+.card.sucess input {
+  border-bottom:1px solid green;
+}
